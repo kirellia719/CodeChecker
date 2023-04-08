@@ -117,7 +117,7 @@ class StaticChecker(Visitor):
             if type(typ) == type(init):
                 o[0] += [Symbol(ctx.name, typ, Variable())]
             else:
-                raise TypeMismatchInVardecl(ctx)
+                raise TypeMismatchInVarDecl(ctx)
         return o
 
     def visitParamDecl(self, ctx, o):

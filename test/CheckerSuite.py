@@ -54,7 +54,7 @@ class CheckerSuite(unittest.TestCase):
 
     # def test_409(self):
     #     input = Program([VarDecl('x', IntegerType(), FloatLit(2.123))])
-    #     expected = str(TypeMismatchInVardecl(
+    #     expected = str(TypeMismatchInVarDecl(
     #         VarDecl('x', IntegerType(), FloatLit(2.123))))
     #     self.assertTrue(TestChecker.test(input, expected, 409))
 
@@ -81,7 +81,8 @@ class CheckerSuite(unittest.TestCase):
     #     expected = str(Redeclared(Variable(), 'a'))
     #     self.assertTrue(TestChecker.test(input, expected, 413))
 
-    # ------------------ Function Check ---------------------
+    # # ------------------ Function Check - --------------------
+
     # def test_414(self):
     #     input = Program([FuncDecl('foo', VoidType(), [], None, BlockStmt([]))])
     #     expected = str([])
@@ -140,7 +141,8 @@ class CheckerSuite(unittest.TestCase):
     #     expected = str([])
     #     self.assertTrue(TestChecker.test(input, expected, 419))
 
-    # --------------- Check Redclare In Block --------------------
+    # # --------------- Check Redclare In Block - -------------------
+
     # def test_420(self):
     #     input = Program([
     #         FuncDecl('a', VoidType(), [], None, BlockStmt([
@@ -205,7 +207,8 @@ class CheckerSuite(unittest.TestCase):
     #     expected = str(Redeclared(Variable(), 'x'))
     #     self.assertTrue(TestChecker.test(input, expected, 425))
 
-    # --------------- Check Assign Stmt -----------------------
+    # # --------------- Check Assign Stmt - ----------------------
+
     # def test_426(self):
     #     input = Program([
     #         FuncDecl('main', VoidType(), [], None, BlockStmt([
@@ -245,7 +248,8 @@ class CheckerSuite(unittest.TestCase):
     #     expected = str([])
     #     self.assertTrue(TestChecker.test(input, expected, 429))
 
-    # -------------- If stmt -----------------------------
+    # # -------------- If stmt - ----------------------------
+
     # def test_430(self):
     #     input = Program([
     #         FuncDecl('main', VoidType(), [], None, BlockStmt([
